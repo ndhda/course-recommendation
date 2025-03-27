@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About - EduChoice</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/templatemo-topic-listing.css') }}" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url_for('home') }}">
+                    <i class="bi-back"></i>
+                    <span>EduChoice .</span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="{{ url_for('home') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="{{ url_for('home') }}#section_2">Browse Topics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="{{ url_for('home') }}#section_3">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Log Out</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 col-12 mb-5">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Homepage</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">About</li>
+                            </ol>
+                        </nav>
+
+                        <h2 class="text-white">About EduChoice</h2>
+
+                        <div class="d-flex align-items-center mt-5">
+                            <a href="#about" class="btn custom-btn custom-border-btn smoothscroll me-4">Read More</a>
+                            <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <div class="about-block bg-white shadow-lg">
+                            <img src="{{ url_for('static', filename='images/topics/undraw_Remote_design_team_re_urdx.png') }}" class="about-block-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 m-auto">
+                        <h2 class="mb-4">Overview</h2>
+                        <p>EduChoice is a web-based platform designed to help learners identify the best Coursera courses tailored to their preferences. By utilizing the Multi-Criteria Decision Making (MCDM) method, specifically the TOPSIS technique, EduChoice
+                            ranks courses based on user-selected criteria, ensuring personalized and relevant recommendations.<br></p>
+
+                        <h2 class="mb-4">Project Goals:</h2>
+                        <ul>
+                            <li>Identify Course Selection Criteria: Understand the factors that influence user choices for online courses.</li>
+                            <li>Develop a Recommendation System: Implement the TOPSIS method to provide data-driven course recommendations.</li>
+                            <li>Ensure System Accuracy: Deliver precise and relevant course rankings to enhance the user experience.</li>
+                        </ul>
+
+                        <h2 class="mb-4">Features</h2>
+                        <ul>
+                            <li>Personalized Recommendations: Users can customize criteria based on course difficulty, duration, and type.</li>
+                            <li>User-Friendly Interface: Simple navigation with a clear 'GET RECOMMENDED' button for quick access.</li>
+                            <li>Advanced Decision-Making: Utilizes the TOPSIS method for accurate course ranking.</li>
+                            <li>Static Display: Information presented clearly, even when hosted on localhost.</li>
+                        </ul>
+
+                        <h2 class="mb-4">How It Works</h2>
+                        <p>Course Criteria: Users select from categories such as:</p>
+                        <ul>
+                            <li>Course Difficulty: Beginner, intermediate, mixed, or advanced.</li>
+                            <li>Course Time: Options ranging from 1-4 weeks to 3-6 months.</li>
+                            <li>Course Type: Including courses, specializations, and professional certificates.</li>
+                        </ul>
+                        <p>Ranking System: The system processes user input through the TOPSIS method, generating a ranked list of courses.</p>
+
+                        <h2 class="mb-4">Future Vision</h2>
+                        <p>While currently hosted on localhost, EduChoice envisions expanding to a broader audience, providing an accessible platform for learners worldwide. The goal is to continually improve the recommendation system, incorporating user
+                            feedback and expanding the range of supported platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright-text">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a> Distribution <a href="https://themewagon.com">ThemeWagon</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+
+</html>
