@@ -1,5 +1,4 @@
-﻿# course-recommendation
-# EduChoice
+﻿# course-recommendation (EduChoice)
 
 ## 📌 Project Description
 EduChoice is a platform designed to help students make informed decisions about their education by providing recommendations based on their preferences, academic background, and available opportunities.
