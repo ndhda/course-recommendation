@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Needed for session management
 
 # Load the dataset
-df = pd.read_csv('C:\\Users\\nadir\\OneDrive\\Desktop\\fyptest2\\coursera_courses.csv')
+df = pd.read_csv('data/coursera_courses.csv')
 
 users = {}  # Simple user storage
 
